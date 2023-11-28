@@ -1,6 +1,6 @@
 Set -e
 
-CPATH='.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar'
+CPATH='.;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar'
 
 rm -rf student-submission
 rm -rf grading-area
@@ -32,5 +32,5 @@ echo 'Files moved to grading area'
 
 # Runing junit from grading-area
 cd grading-area
-javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
-java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore TestListExamples
+javac -cp .;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar *.java
+java -cp .;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar org.junit.runner.JUnitCore TestListExamples
